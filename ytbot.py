@@ -7,9 +7,9 @@ from db import Comments
 import praw
 from creds import *
 
-# actually do shit boolean
+# actually do stuff boolean
 legit = True
-log = False
+log = True
 
 # PRAW stuff
 r = praw.Reddit('YouTube link/search bot by /u/MattCMultimedia')
@@ -48,7 +48,7 @@ while True:
                         ).execute()
 
                     result = response.get("items", [])[0]
-                    print result
+                    if log: print result
 
                     final_url = "http://www.youtube.com/watch?v=" + result['id']['videoId']
                     if log: print "-> " + final_url

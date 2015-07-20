@@ -12,7 +12,7 @@ legit = True
 log = True
 
 # PRAW stuff
-r = praw.Reddit('YouTube link/search bot by /u/MattCMultimedia')
+r = praw.Reddit('YouTube link/search bot by /u/_shrugs')
 r.login('ytbot', passwd)
 
 
